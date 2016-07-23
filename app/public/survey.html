@@ -216,8 +216,7 @@
           // Question: What does this code do??
           $.post( currentURL + "/api/friends", newFriend)
                .done(function(data){
-                    //console.log(newFriend);
-                    console.log(JSON.stringify(data));
+                    //console.log(JSON.stringify(data));
                     var oldFriends = [];
                     for (var i = 0; i < data.length; i++) {
                               oldFriends.push(data[i].scores);
@@ -236,8 +235,8 @@
 
                     var indexInArray = scoreArray.indexOf(Math.min(...scoreArray));
 
-                    console.log(indexInArray);
-                    console.log(oldFriends);
+                    //console.log(indexInArray);
+                    //console.log(oldFriends);
                     $("#nameOfMatch").html(data[indexInArray].name);
                     $("#imageHolder").html(data[indexInArray].photo);
                     $("#myModal").modal('toggle');

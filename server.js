@@ -18,7 +18,7 @@ app.use(bodyParser.json({type:'application/vnd.api+json'}));
 
 // Routes
 // =============================================================
-
+// Ask Roger what the line below does.
 app.use(express.static('app'));
 require("./app/routing/api-routes.js")(app);
 require('./app/routing/html-routes.js')(app);
